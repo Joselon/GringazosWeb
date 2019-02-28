@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon-precomposed" href="Gringazos.png" />
+    <title>Gringazos</title>
+    <link rel="shortcut icon" href="Gringazos.png">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/b14b32a200649d0650c1a6ff3db39cf4.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/df23ebd5b1d0071bb0956371692cf99c.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 892px; height: 480px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Gringazos</div>
+      </div>
+    </div>
+  </body>
+</html>
